@@ -55,14 +55,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
           var randomNum = Math.random() * 100;
 
-            if (randomNum<33) {
+            if (randomNum<22) {
               var size = 'small';
             }
-            else if (randomNum<66) {
+            else if (randomNum<55) {
               var size = 'medium';
             }
-            else if (randomNum<100) {
+            else if (randomNum<60) {
               var size = 'large';
+            }
+            else if (randomNum<100) {
+              var size = 'ornaments';
             }
 
 

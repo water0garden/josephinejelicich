@@ -65,6 +65,8 @@ h4 {
 
 .view-1 .small {
   max-width: 10%;
+  animation: shake 10s;
+  animation-iteration-count: infinite;}
 
 }
 
@@ -75,6 +77,29 @@ h4 {
 .view-1 .large {
   max-width: 60%;
 }
+
+
+
+.ornaments{
+  font-family: 'hoefler-text-ornaments', hoefler-text-ornaments;
+  font-size: 2rem;
+}
+
+
+ @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 
 /* @media (max-width: 800px) {
   .work-container {
