@@ -52,10 +52,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var source = entry.image.original.url
           };
 
-          var entryHTML = '<figure class="work">'
-                + '<img src="'
-                + entry.image.original.url
-                + '">'
+
+          var randomNum = Math.random() * 100;
+
+            if (randomNum<33) {
+              var size = 'small';
+            }
+            else if (randomNum<66) {
+              var size = 'medium';
+            }
+            else if (randomNum<100) {
+              var size = 'large';
+            }
+
+
+          var entryHTML = '<figure class="work ' + size + '">'
+                + '<img src="' + entry.image.original.url + '">'
                 + '<figcaption>'
                    + entry.description_html
                 + '</figcaption>'

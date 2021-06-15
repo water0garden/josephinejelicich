@@ -23,7 +23,7 @@ html {
 
 @font-face {
   font-family: 'hoefler-text-ornaments';
-  src: url(../fonts/hoefler-text-ornaments.ttf);
+  src: url(fonts/hoefler-text-ornaments.ttf);
 }
 
 * {
@@ -41,7 +41,9 @@ a:hover { color: lavender;}
 
 
 .special {
-  font-family: 'hoefler-text-ornaments', ornaments;
+  font-family: 'hoefler-text-ornaments', hoefler-text-ornaments;
+font-weight: normal;
+font-style: normal;
   font-size: 1rem;
   line-height: 1.3;
 }

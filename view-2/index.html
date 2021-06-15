@@ -40,65 +40,19 @@
 	</span>
 
 
-<article class="clearfix">
- <section class="work-container">
-   <figure class="work"><img src="1.jpg">
-     <figcaption>A table I made when pieces fell together, Walnut wood, 2019</figcaption>
-    </figure>
-
-  <figure class="work"><img src="2.jpg">
-    <figcaption>A piece of the creation, perfect cut wood, 2018</figcaption>
-  </figure>
-
-    <figure class="work"><img src="3.jpg">
-      <figcaption>That in the room chair piece, Sea wood, 2020</figcaption>
-    </figure>
-
-    <figure class="work"><img src="IMG_4987.JPG">
-      <figcaption>Table with ends, Study piece wood, 2021</figcaption>
-    </figure>
-
-    <figure class="work"><img src="20191203-IMG_5409.jpg">
-    <figcaption>Table with ends, Study piece wood, 2021</figcaption>
-  </figure>
-
-  <figure class="work"><img src="20191203-IMG_5413.jpg">
-    <figcaption>A table I made when pieces fell together, Walnut wood, 2019</figcaption>
-   </figure>
-
- <figure class="work"><img src="20191203-IMG_5427-2.jpg">
-   <figcaption>A piece of the creation, perfect cut wood, 2018</figcaption>
- </figure>
-
-   <figure class="work"><img src="20191203-IMG_5426.jpg">
-     <figcaption>That in the room chair piece, Sea wood, 2020</figcaption>
-   </figure>
-
-   <figure class="work"><img src="4.jpg">
-     <figcaption>Table with ends, Study piece wood, 2021</figcaption>
-   </figure>
-
-   <figure class="work"><img src="20191203-IMG_5429.jpg">
-   <figcaption>Cake, Study piece wood, 2021</figcaption>
- </figure>
-
- <figure class="work"><img src="5.jpg">
- <figcaption>Precarious, 2021</figcaption>
-</figure>
-
-<figure class="work"><img src="6.jpg">
-<figcaption>Precarious, 2021</figcaption>
-</figure>
-
-<figure class="work"><img src="cabinet.jpg">
-<figcaption>Precarious, 2021</figcaption>
-</figure>
-
-</section>
-</article>
+  <section class="work-container">
+ </section>
 
 
-<script src="../js/test.js?v2"></script>
+<!-- <script src="../js/test.js?v2"></script> -->
+<script src="../js/main.js?v2"></script>
+<script src="../js/arena.js?v2"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+    arenaDisplay.fetch('angel-stump', 99, document.querySelector('.work-container') );
+});
+
+</script>
 
 </body>
 </html>
