@@ -61,12 +61,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
             else if (randomNum<66) {
               var size = 'medium';
             }
-            else if (randomNum<77) {
+            else if (randomNum<100) {
               var size = 'large';
             }
-            else if (randomNum<100) {
-              var size = 'ornaments';
-            }
+            // else if (randomNum<100) {
+            //   var size = 'ornaments';
+            // }
 
 
           var entryHTML = '<figure class="work ' + size + '">'
