@@ -72,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
           var entryHTML = '<figure class="work ' + size + '">'
                 + '<img src="' + entry.image.original.url + '">'
                 + '<figcaption>'
-                   + entry.description_html
+                  + entry.title + entry.description_html
                 + '</figcaption>'
               + '</figure>';
         }
+
 
         else if (entry.class === 'Link') {
           if (entry.title !== "") {
