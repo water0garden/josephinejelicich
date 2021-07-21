@@ -69,13 +69,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // }
 
 
+        //   var entryHTML = '<figure class="work ' + size + '">'
+        //         + '<img src="' + entry.image.original.url + '">'
+        //         + '<figcaption>'
+        //           + entry.title + entry.description_html
+        //         + '</figcaption>'
+        //       + '</figure>';
+        // }
+
+
           var entryHTML = '<figure class="work ' + size + '">'
                 + '<img src="' + entry.image.original.url + '">'
-                + '<figcaption>'
-                  + entry.title + entry.description_html
-                + '</figcaption>'
-              + '</figure>';
-        }
+                + '<div class="dropdown">'
+                  +  '<button class="dropbtn">'
+                    + entry.title
+                      +  '<i class="fa fa-caret-down"></i>'
+                  + '</button>'
+                  + '<div class="dropdown-content" id="myDropdown">'
+                  + entry.description_html
+                  + '</div>'
+                + '</div>'
+              + '</figure>'
+          }
+
+
 
 
         else if (entry.class === 'Link') {

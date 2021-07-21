@@ -1,21 +1,48 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-  var dropdownTrigger = document.querySelector('.dropbtn');
+var dropdownTriggers = document.querySelectorAll('.dropbtn');
+console.log(dropdownTriggers);
 
-  dropdownTrigger.addEventListener('click', myFunction);
+const Dropdowns = {
+  init: function() {
+    Dropdowns.bindEvents();
+  },
 
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+  bindEvents: function() {
+    dropdownTriggers = document.querySelectorAll('.dropbtn');
+    console.log(dropdownTriggers);
 
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
+
+    for (var i = 0; i < dropdownTriggers.length; i++) {
+      dropdownTriggers[i].addEventListener('click', function(){
+          this.classList.toggle("show");
+        console.log('curious', this);
+
+      });
     }
   }
+};
 
-})
+
+
+
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.description.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+
+setTimeout(function(){
+
+  console.log('start dropping');
+  Dropdowns.init()
+
+}, 4000);
+
+});

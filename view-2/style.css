@@ -302,8 +302,13 @@ button {
   /* margin: 0; */
 }
 
+ /* .dropbtn:active {
+  display: none;
+} */
 
-
+.dropbtn.show {
+ /* background: yellow!important; */
+}
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
@@ -311,13 +316,22 @@ button {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   min-width: 160px;
+  min-height: 40px;
   padding-top: 1rem transparent;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   z-index: 1;
-
 }
+
+.dropbtn.show + .dropdown-content {
+  display: block;
+}
+
+
+/* .dropdown-content:active {
+  display: none;
+} */
 
 @media (max-width: 800px) {
 .dropdown-content {
