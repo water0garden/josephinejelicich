@@ -19,17 +19,7 @@
 			Based in Tāmaki Makaurau Auckland
 		</span>
     <span class="text-frag">
-      <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">About
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="../about/index.html">Art and Wood Philosophy</a>
-        <a href="../about/index.html">Commissions</a>
-        <a href="../about/index.html">Carpentry School in Nelson</a>
-        <a href="../about/index.html">Night & Day classes</a>
-      </div>
-      </div>
+      <a href="../about/index.html">About</a>
     </span>
     <span class="text-frag">
       <a href="../index.html">View 1</a>
@@ -37,31 +27,33 @@
     <span class="text-frag">
       <a href="../index.html">View 2</a>
     </span>
-	</span>
-
-
-<article class="clearfix">
- <section class="work-container">
-   <figure class="work"><img src="IMG_5112.JPG">
-     <figcaption>A table I made when pieces fell together, Walnut wood, 2019</figcaption>
-    </figure>
-
-    <figure class="work"><img src="IMG_4987.JPG">
-      <figcaption>Table with ends, Study piece wood, 2021</figcaption>
-    </figure>
-
-    <figure class="work"><img src="IMG_5024.jpg">
-    <figcaption>Table with ends, Study piece wood, 2021</figcaption>
-  </figure>
+    <span class="text-frag">
+      <div class="dropdown">
+      <button class="dropbtnmenu">Wood Work
+      </button>
+      <div class="dropdown-list">
+        <a href="../about/index.html">Art and Wood Philosophy</a>
+        <a href="../commissions/index.html">Commissions</a>
+        <a href="../nelson/index.html">Carpentry School in Nelson</a>
+        <a href="../warren/index.html">Night & Day classes</a>
+      </div>
+      </div>
+    </span>
+  </span>
 
 
 
-</section>
-</article>
+   <section class="work-container">
+  </section>
 
-<p>Wood is a porous and fibrous structural tissue found in the stems and roots of trees and other woody plants. It is an organic material – a natural composite of cellulose fibers that are strong in tension and embedded in a matrix of lignin that resists compression. Wood is sometimes defined as only the secondary xylem in the stems of trees,[1] or it is defined more broadly to include the same type of tissue elsewhere such as in the roots of trees or shrubs.[citation needed] In a living tree it performs a support function, enabling woody plants to grow large or to stand up by themselves. It also conveys water and nutrients between the leaves, other growing tissues, and the roots. Wood may also refer to other plant materials with comparable properties, and to material engineered from wood, or wood chips or fiber.</p>
-<script src="../js/main.js?v2"></script>
+  <script src="../js/main.js?v2"></script>
+  <script src="../js/arena.js?v2"></script>
 
-<script src="js/main.js?v2"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+      arenaDisplay.fetch('commissions-gvumfywkniq', 99, document.querySelector('.work-container') );
+  });
+
+  </script>
 </body>
 </html>

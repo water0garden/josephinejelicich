@@ -56,8 +56,6 @@ button {
   float: left;
   display: block;
   overflow: auto;
-
-
 }
 
 /* @media (max-width: 800px) {
@@ -161,33 +159,24 @@ color: black;
   text-decoration: none;
 }
 
-
-.dropdown .dropbtn {
-  cursor: alias;
-  border: none;
-  color: black;
-  background-color: inherit;
-  font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-  font-size: 1rem;
-  /* margin: 0; */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: white;
-}
-
-.dropdown-content {
-
+/* Dropdown Content (Hidden by Default) */
+.dropdown-list {
   display: none;
   position: absolute;
+  background-color: white;
   min-width: 160px;
-  padding-top: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdown-content a {
-  float: none;
+/* Links inside the dropdown */
+.dropdown-list a {
   color: black;
   padding: 12px 16px;
   border: 1px dotted;
@@ -200,10 +189,25 @@ color: black;
   letter-spacing: 0.045rem;
 }
 
-.dropdown-content a:hover {
-  text-decoration: underline;
+/* Change color of dropdown links on hover */
+.dropdown-list a:hover {text-decoration: underline;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-list {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtnmenu {}
+
+
+
+.text-block{
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
-.show {
+p {
+  width: 100%;
   display: block;
+  position: relative;
 }
