@@ -21,6 +21,55 @@ html {
    overflow: auto;
 }
 
+@font-face {
+  font-family: 'hoefler-text-ornaments';
+  src: url(../fonts/hoefler-text-ornaments.ttf);
+}
+
+.special {
+  font-family: 'hoefler-text-ornaments', hoefler-text-ornaments;
+font-weight: normal;
+font-style: normal;
+  font-size: 1rem;
+  line-height: 1.3;
+  animation: shake 10s;
+  animation-iteration-count: infinite;
+}
+
+@font-face {
+  font-family: 'Herculanum.ttf';
+  src: url(../fonts/Herculanum.ttf);
+}
+
+.title-page {
+  font-family: 'Herculanum', Herculanum;
+font-weight: light;
+font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  animation-iteration-count: infinite;
+  padding-bottom: 0px;
+}
+
+
+
+@keyframes shake {
+ 0% { transform: translate(1px, 1px) rotate(0deg); }
+ 10% { transform: translate(-1px, -2px) rotate(-1deg); }
+ 20% { transform: translate(-3px, 0px) rotate(1deg); }
+ 30% { transform: translate(3px, 2px) rotate(0deg); }
+ 40% { transform: translate(1px, -1px) rotate(1deg); }
+ 50% { transform: translate(-1px, 2px) rotate(-1deg); }
+ 60% { transform: translate(-3px, 1px) rotate(0deg); }
+ 70% { transform: translate(3px, 1px) rotate(-1deg); }
+ 80% { transform: translate(-1px, -1px) rotate(1deg); }
+ 90% { transform: translate(1px, 2px) rotate(0deg); }
+ 100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
 
 body {
   font-size: 1rem;
@@ -36,14 +85,15 @@ body {
   overflow: auto;
 }
 
+
 .work-container {
   padding-top: 4rem;
-  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   float: left;
   display: block;
   overflow: auto;
+  vertical-align: top;
 
 
 }
@@ -54,54 +104,20 @@ body {
   }
 } */
 
-/*
+
+
 img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  z-index: 1
-}
-
-
-figure {
-  margin: 0;
-  padding: 0;
-  margin-right: 2.5rem;
-  margin-bottom: 2.5rem;
-  width: 600px;
-  display: block;
+  width: 650px;
+  display: inline-block;
   position: relative;
+
 }
 
-@media (max-width: 800px) {
-  figure {
-    width: 100%;
-    display: block;
-  }
-}
-
-
-
-.work {
-  float: left;
-  display: block;
-  max-width: 100%;
-}
-
-@media (max-width: 800px) {
-  .work {
-    width: 50%;
-  }
+ /* img:hover {
+  display: none;
+  position: absolute;
+  transition: 3s;
 } */
-
-
-
-
-img {
-  width: 600px;
-  display: block;
-  position: relative;
-}
 
 
 figure {
@@ -109,7 +125,61 @@ figure {
   padding: 0;
   margin-right: 1.5rem;
   margin-bottom:1.5rem;
+  max-width: 50%;
+  display: block;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  figure {
+    width: 50%;
+    display: block;
+  }
+}
+
+.work {
+vertical-align: top;
+  display: inline-block;
+
+}
+
+@media (max-width: 800px) {
+  .work {
+    max-width: 50%;
+  }
+}
+
+
+/*
+.work-container {
+  padding-top: 4rem;
   max-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  float: left;
+  display: block;
+  overflow: auto;
+
+
+}
+
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: relative;
+
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+  margin-right: 2.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 50%;
   display: block;
   position: relative;
 }
@@ -124,15 +194,20 @@ figure {
 .work {
   float: left;
   display: block;
-  max-width: 100%;
+  max-width: 400px;
 }
+
+/* .work:hover{
+  max-width: 500px;
+  float: left;
+  display: block;
+} */
 
 @media (max-width: 800px) {
   .work {
-    max-width: 70%;
+    width: 100%;
   }
 }
-
 
 
 
@@ -170,8 +245,12 @@ a:hover { color: lavender;}
 } */
 
 figcaption {
-  padding-top: 4px;
-  max-width: 500px;
+  padding-top: 0.5rem;
+  width: 650px;
+}
+
+figcaption:hover {
+  color: black;
 }
 
 @media (max-width: 800px) {
@@ -180,9 +259,22 @@ figcaption {
   }
 }
 
+p {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
+  letter-spacing: 0.045rem;
+  margin: 0px;
+  padding-bottom: 5rem;
+}
+
+
+
 .text-frag {
   display: inline-block;
   margin-right: 3ch;
+  vertical-align: top;
+  position: relative;
 }
 
 @media (max-width: 800px) {
@@ -192,7 +284,9 @@ figcaption {
 }
 
 
-button{
+
+button {
+  background-color: transparent;
   padding: 0;
   font-size: 1rem;
   line-height: 1.3;
@@ -206,7 +300,7 @@ button{
 .navbar {
   display: inline-block;
   margin-right: 3ch;
-color: black;
+  color: black;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
 }
 
@@ -226,26 +320,58 @@ color: black;
   background-color: inherit;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 12rem;
+  text-align: left;
+
+
   /* margin: 0; */
 }
 
+ /* .dropbtn:active {
+  display: none;
+} */
+
+.dropbtn.show {
+ /* background: yellow!important; */
+}
+
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: white;
+  background-color: transparent;
 }
 
 .dropdown-content {
-
   display: none;
-  position: absolute;
+  position: relative;
+  padding-left: 6px transparent;
   min-width: 160px;
-  padding-top: 4px;
+  min-height: 40px;
+  padding-top: 0.5rem transparent;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   z-index: 1;
 }
 
+.dropbtn.show + .dropdown-content {
+  display: block;
+}
+
+
+/* .dropdown-content:active {
+  display: none;
+} */
+
+@media (max-width: 800px) {
+.dropdown-content {
+    width: 90%;
+    position: relative;
+  }
+}
+
+
 .dropdown-content a {
   float: none;
   color: black;
+  padding-top: 4px;
   padding: 12px 16px;
   border: 1px dotted;
   text-decoration: none;
@@ -256,6 +382,8 @@ color: black;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
 }
+
+
 
 .dropdown-content a:hover {
   text-decoration: underline;

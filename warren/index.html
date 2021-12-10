@@ -18,24 +18,22 @@
 		<span class="text-frag">
 			Based in Tāmaki Makaurau Auckland
 		</span>
-    <span>
-    <a href="../about/index.html">About</a>
+    <span class="text-frag">
+      <a href="../about/index.html">About</a>
     </span>
-
-
-    <!-- <span class="text-frag">
+    <span class="text-frag">
       <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">About
+      <button class="dropbtn" onclick="myFunction()">Wood Work
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content" id="myDropdown">
-        <a href="../about/index.html">Art and Wood Philosophy</a>
-        <a href="../about/index.html">Commissions</a>
-        <a href="../about/index.html">Carpentry School in Nelson</a>
-        <a href="../about/index.html">Night & Day classes</a>
+        <a href="../art/index.html">Personal Projects</a>
+        <a href="../commissions/index.html">Commissions</a>
+        <a href="../nelson/index.html">Nelson Carpentry School</a>
+        <a href="../warren/index.html">The Warren</a>
       </div>
       </div>
-    </span> -->
+    </span>
     <span class="text-frag">
       <a href="../view-1/index.html">View 1</a>
     </span>
@@ -45,27 +43,31 @@
 	</span>
 
 
-<article class="clearfix">
- <section class="work-container">
-   <figure class="work"><img src="IMG_5112.JPG">
-     <figcaption>A table I made when pieces fell together, Walnut wood, 2019</figcaption>
-    </figure>
 
-    <figure class="work"><img src="IMG_4987.JPG">
-      <figcaption>Table with ends, Study piece wood, 2021</figcaption>
-    </figure>
 
-    <figure class="work"><img src="IMG_5024.jpg">
-    <figcaption>Table with ends, Study piece wood, 2021</figcaption>
-  </figure>
+      <section class="work-container">
+
+      </section>
+
+      <article class="text-block">
+      </article>
 
 
 
-</section>
-</article>
 
-<p>The Warren Workshop was started by Tim Boyd in 2018 as a community space for woodworkers, as well as a place for classes to take place, it has recently changed form and is sadly no longer operating as a community oriented space. I started teaching woodwork there in 2020 , The images below show some of my students work from my ‘make a pencil box’ class and ‘make a fine stool’ class, these classes were designed to be accessible to beginners or people with no woodwork experience , but were adaptable to make challenging enough for people with some experience. The pencil box class was a  hour weekly course done over six weeks, it focused on safely using machines and  how hand cut joinery - to properly mark and cut your own finger joints a skill that is transferable to all hand cut joinery, we also covered panel fitting , hand planing, how to glue up efficiently, sanding and oiling techniques. The “the make a fine stool’ course was funded by CNZ so we were able to use solid walnut ($$$$$) . It was designed to take place over two days, more of an intensive one. In this class I taught the students how to cut their wood to size, how to route an accurate groove, how to mark out and fit mortise and tenons using machines and hand tools, how to hand shape the cross rails, how to glue up and finish. The idea being I taught the whole process of making starting with pre milled wood. I also taught private lessons at the warren, working with people on specific projects , since the warren is now converting to woodworking studios classes won't be happening  anymore but i may still be able to do limited private lessons, i hope to teach again in the future. </p>
-<script src="../js/main.js?v2"></script>
+
+
+  <script src="../js/main.js?v2"></script>
+  <script src="../js/arena.js?v2"></script>
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+      arenaDisplay.fetch('the-warren', 99, document.querySelector('.work-container') );
+  });
+
+  </script>
+
 
 </body>
 </html>
