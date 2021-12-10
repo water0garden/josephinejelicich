@@ -301,6 +301,8 @@ button {
 
 .dropbtn.show + .dropdown-content {
   display: block;
+  position: absolute;
+  background-color: white;
 }
 
 

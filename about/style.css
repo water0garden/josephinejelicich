@@ -193,14 +193,13 @@ figure {
 
 
 
-button{
+button {
   padding: 0;
   font-size: 1rem;
   line-height: 1.3;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
   cursor: grab;
-
 }
 
 
@@ -332,8 +331,9 @@ button {
 
 .dropbtn.show + .dropdown-content {
   display: block;
+  position: absolute;
+  background-color: white;
 }
-
 
 /* .dropdown-content:active {
   display: none;

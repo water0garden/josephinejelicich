@@ -211,8 +211,8 @@ button{
 }
 
 a:link, a:visited {
-color: black;
-text-decoration: none;
+color: azure;
+text-decoration: underline;
 display: inline-block;
 }
 
@@ -290,7 +290,7 @@ button {
   font-size: inherit;
   color: black;
   /* padding: 14px 16px; */
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
@@ -334,6 +334,8 @@ button {
 
 .dropbtn.show + .dropdown-content {
   display: block;
+  position: absolute;
+  background-color: white;
 }
 
 
@@ -351,7 +353,6 @@ button {
 
 .dropdown-content a {
   float: none;
-  color: black;
   padding-top: 4px;
   padding: 12px 16px;
   border: 1px dotted;
@@ -368,6 +369,7 @@ button {
 
 .dropdown-content a:hover {
   text-decoration: underline;
+
 }
 
 .show {

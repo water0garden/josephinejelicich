@@ -181,6 +181,7 @@ button{
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
   cursor: grab;
+    color: transparent;
 
 }
 
@@ -210,10 +211,11 @@ a:hover { color: lavender;}
 figcaption {
   padding-top: 0.5rem;
   width: 650px;
+    color: transparent;
 }
 
 figcaption:hover {
-  color: black;
+  color: transparent;
 }
 
 @media (max-width: 800px) {
@@ -299,6 +301,8 @@ button {
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
+  color: azure;
+  text-decoration: 1px dotted underline;
 }
 
 .dropdown-content {
@@ -314,6 +318,8 @@ button {
 
 .dropbtn.show + .dropdown-content {
   display: block;
+  position: absolute;
+  background-color: transparent;
 }
 
 
@@ -331,7 +337,7 @@ button {
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: azure;
   padding-top: 4px;
   padding: 12px 16px;
   border: 1px dotted;
@@ -342,6 +348,7 @@ button {
   line-height: 1.3;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
+
 }
 
 
