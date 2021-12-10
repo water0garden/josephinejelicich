@@ -81,11 +81,11 @@ body {
 
 }
 
-/* @media (max-width: 800px) {
+ @media (max-width: 800px) {
   .work-container {
-    max-width: 80%;
+    max-width: 100%;
   }
-} */
+}
 
 
 
@@ -94,6 +94,14 @@ img {
   display: block;
   position: relative;
 }
+
+@media (max-width: 800px) {
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
 
  /* img:hover {
   display: none;
@@ -115,7 +123,7 @@ figure {
 
 @media (max-width: 800px) {
   figure {
-    width: 50%;
+    max-width: 100%;
     display: block;
   }
 }
@@ -128,7 +136,8 @@ margin: 0 auto;
 
 @media (max-width: 800px) {
   .work {
-    max-width: 50%;
+    max-width: 100%;
+    display: block;
   }
 }
 
@@ -186,12 +195,6 @@ figure {
   display: block;
 } */
 
-@media (max-width: 800px) {
-  .work {
-    width: 100%;
-  }
-}
-
 
 
 button{
@@ -238,7 +241,7 @@ figcaption:hover {
 
 @media (max-width: 800px) {
   figcaption {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -302,11 +305,19 @@ button {
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   font-size: 1rem;
   padding-bottom: 1rem;
-  padding-right: 12rem;
+  /* padding-right: 12rem; */
   text-align: left;
 
 
   /* margin: 0; */
+}
+
+@media (max-width: 800px) {
+.dropdown .dropbtn {
+    width: 100%;
+    display: inline-block;
+    padding-right: 0px;
+  }
 }
 
  /* .dropbtn:active {
@@ -325,12 +336,22 @@ button {
   display: none;
   position: relative;
   padding-left: 6px transparent;
-  min-width: 160px;
+    min-width: 90%;
   min-height: 40px;
   padding-top: 0.5rem transparent;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   z-index: 1;
 }
+
+@media (max-width: 800px) {
+.dropdown-content {
+    min-width: 90%;
+    position: relative;
+
+  }
+}
+
+
 
 .dropbtn.show + .dropdown-content {
   display: block;
@@ -338,17 +359,20 @@ button {
   background-color: white;
 }
 
+@media (max-width: 800px) {
+.dropbtn.show + .dropdown-content {
+    min-width: 90%;
+    display: inline-block;
+    padding: 0px;
+  }
+}
+
 
 /* .dropdown-content:active {
   display: none;
 } */
 
-@media (max-width: 800px) {
-.dropdown-content {
-    width: 90%;
-    position: relative;
-  }
-}
+
 
 
 .dropdown-content a {
