@@ -74,7 +74,7 @@ body {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  float: left;
+  /* float: left; */
   display: block;
   overflow: auto;
 

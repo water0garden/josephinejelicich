@@ -116,8 +116,9 @@ button{
 .navbar {
   display: inline-block;
   margin-right: 3ch;
-color: black;
+  color: black;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
+  width: 100%;
 }
 
 .navbar a {
@@ -176,9 +177,11 @@ color: black;
 
 /* Dropdown Button */
 .dropbtnmenu {
-  border: none;
+
+  border: 1px black dotted;
+  padding: 3px;
   color: black;
-  background-color: inherit;
+  background-color: white	;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   font-size: 1rem;
 }
@@ -221,3 +224,16 @@ color: black;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtnmenu {}
+
+/* .dropdown {
+  position: relative;
+  text-align: right;
+} */
+
+.menu {
+  position: relative;
+  text-align: right;
+  display: block;
+  float: right;
+  padding-right: 90px;
+}
