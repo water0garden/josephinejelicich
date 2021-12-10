@@ -66,6 +66,7 @@ body {
 
 img {
   width: 100%;
+    border-radius: 10px;
 }
 
 
@@ -125,6 +126,7 @@ img {
 
   top: 100px;
   left: 290px;
+
   position: absolute;
   margin: 100px auto;
   z-index: 10;

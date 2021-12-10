@@ -212,12 +212,12 @@ button{
 
 a:link, a:visited {
 color: black;
-text-decoration: underline;
+text-decoration: none;
 display: inline-block;
 }
 
 a:active { color: forestgreen;}
-a:hover { color: lavender;}
+a:hover { color: black;}
 
 /* footer {
   border-top: 1px;
