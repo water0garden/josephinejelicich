@@ -192,11 +192,7 @@ figure {
   display: block;
 } */
 
-@media (max-width: 800px) {
-  .work {
-    width: 100%;
-  }
-}
+
 
 
 
@@ -264,7 +260,8 @@ p {
 
 @media (max-width: 800px) {
   .text-frag {
-    margin-right: 2ch;
+    margin-right: 4ch;
+
   }
 }
 
@@ -345,9 +342,15 @@ button {
   padding-bottom: 1rem;
   padding-right: 12rem;
   text-align: left;
+}
 
 
-  /* margin: 0; */
+@media (max-width: 800px) {
+  .dropdown .dropbtn  {
+
+    padding-right: 0px;
+
+  }
 }
 
  /* .dropbtn:active {

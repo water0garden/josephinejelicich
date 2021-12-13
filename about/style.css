@@ -97,12 +97,12 @@ img {
   position: relative;
 }
 
- /* img:hover {
-  display: none;
-  position: absolute;
-  transition: 3s;
-} */
-
+@media (max-width: 800px) {
+  img {
+    width: 100%;
+    display: block;
+  }
+}
 
 figure {
   margin: 0;
@@ -116,7 +116,7 @@ figure {
 
 @media (max-width: 800px) {
   figure {
-    width: 50%;
+    width: 100%;
     display: block;
   }
 }
@@ -129,7 +129,7 @@ margin: 0 auto;
 
 @media (max-width: 800px) {
   .work {
-    max-width: 50%;
+    max-width: 100%;
   }
 }
 
@@ -239,8 +239,9 @@ p {
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
   margin: 0px;
-
 }
+
+
 
 .text-frag {
   display: inline-block;
@@ -297,12 +298,11 @@ button {
   text-align: left;
 }
 
-  /* margin: 0; */
-
-
- /* .dropbtn:active {
-  display: none;
-} */
+@media (max-width: 800px) {
+  .dropdown .dropbtn  {
+    padding-right: 0px;
+  }
+}
 
 .dropbtn.show {
  /* background: yellow!important; */
@@ -368,6 +368,12 @@ button {
 
 .text-block {
   width: 80%;
+}
+
+@media (max-width: 800px) {
+.text-block {
+    width: 100%;
+  }
 }
 
 .work .dropdown .dropbtn {

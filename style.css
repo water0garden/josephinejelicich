@@ -274,8 +274,12 @@ button {
   padding-right: 12rem;
   text-align: left;
 
+}
 
-  /* margin: 0; */
+@media (max-width: 800px) {
+  .dropdown .dropbtn  {
+    padding-right: 0px;
+  }
 }
 
  /* .dropbtn:active {

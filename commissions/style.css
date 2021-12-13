@@ -95,6 +95,13 @@ img {
   position: relative;
 }
 
+@media (max-width: 800px) {
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
  /* img:hover {
   display: none;
   position: absolute;
@@ -115,10 +122,9 @@ figure {
 
 @media (max-width: 800px) {
   figure {
-    width: 50%;
+    width: 100%;
     display: block;
   }
-}
 
 .work {
 margin: 0 auto;
@@ -128,9 +134,10 @@ margin: 0 auto;
 
 @media (max-width: 800px) {
   .work {
-    max-width: 50%;
+    max-width: 80%;
   }
 }
+
 
 
 /*
@@ -307,8 +314,12 @@ button {
   padding-right: 12rem;
   text-align: left;
 
+}
 
-  /* margin: 0; */
+@media (max-width: 800px) {
+  .dropdown .dropbtn  {
+    padding-right: 0px;
+  }
 }
 
  /* .dropbtn:active {

@@ -81,11 +81,7 @@ body {
 
 }
 
- @media (max-width: 800px) {
-  .work-container {
-    max-width: 100%;
-  }
-}
+
 
 
 
@@ -97,7 +93,7 @@ img {
 
 @media (max-width: 800px) {
   img {
-    max-width: 100%;
+    width: 100%;
     display: block;
   }
 }
@@ -123,7 +119,7 @@ figure {
 
 @media (max-width: 800px) {
   figure {
-    max-width: 100%;
+    width: 100%;
     display: block;
   }
 }
@@ -136,78 +132,9 @@ margin: 0 auto;
 
 @media (max-width: 800px) {
   .work {
-    max-width: 100%;
-    display: block;
+    max-width: 80%;
   }
 }
-
-
-/*
-.work-container {
-  padding-top: 4rem;
-  max-width: 100%;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  float: left;
-  display: block;
-  overflow: auto;
-
-
-}
-
-
-img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  position: relative;
-
-}
-
-
-figure {
-  margin: 0;
-  padding: 0;
-  margin-right: 2.5rem;
-  margin-bottom: 1.5rem;
-  max-width: 50%;
-  display: block;
-  position: relative;
-}
-
-@media (max-width: 800px) {
-  figure {
-    width: 100%;
-    display: block;
-  }
-}
-
-.work {
-  float: left;
-  display: block;
-  max-width: 400px;
-}
-
-/* .work:hover{
-  max-width: 500px;
-  float: left;
-  display: block;
-} */
-
-
-
-button{
-  padding: 0;
-  font-size: 1rem;
-  line-height: 1.3;
-  font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-  letter-spacing: 0.045rem;
-  cursor: grab;
-
-}
-
-
 
 
 * {
@@ -253,8 +180,9 @@ p {
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
   margin: 0 auto;
-
 }
+
+
 
 
 /* navagation top */
@@ -314,9 +242,12 @@ button {
   padding-bottom: 1rem;
   padding-right: 12rem;
   text-align: left;
+}
 
-
-  /* margin: 0; */
+@media (max-width: 800px) {
+  .dropdown .dropbtn  {
+    padding-right: 0px;
+  }
 }
 
  /* .dropbtn:active {
