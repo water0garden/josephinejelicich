@@ -82,7 +82,7 @@ body {
 
 
 img {
-  width: 665px;
+  width: 650px;
   display: block;
   position: relative;
   padding-bottom: 1.5rem;
@@ -116,7 +116,6 @@ figure {
 .work {
 margin: 0 auto;
   display: inline-block;
-  width: 50%;
 }
 
 @media (max-width: 800px) {
@@ -303,9 +302,7 @@ button {
   display: block;
 }
 
-.work .dropdown .dropbtn {
-  display: none;
-}
+
 
 footer {
   clear: both;
