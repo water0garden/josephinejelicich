@@ -77,10 +77,12 @@ body {
   display: block;
   overflow: auto;
   vertical-align: top;
-
-
 }
-
+@media (max-width: 800px) {
+.work-container {
+    width: 100%;
+    display: block;
+  }
 
 
 
@@ -132,7 +134,7 @@ margin: 0 auto;
 
 @media (max-width: 800px) {
   .work {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 

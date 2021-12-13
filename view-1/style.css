@@ -82,9 +82,15 @@ body {
   max-width: 10%;
   animation: shake 10s;
   animation-iteration-count: infinite;
-
-
 }
+
+@media (max-width: 800px) {
+.view-1 .small  {
+    width: 40%;
+    display: block;
+  }
+}
+
 
 .view-1 .small:hover {
   width: 60%;
@@ -94,8 +100,22 @@ body {
       max-width: 30%;
   }
 
+  @media (max-width: 800px) {
+  .view-1 .medium  {
+      width: 60%;
+      display: block;
+    }
+  }
+
 .view-1 .large {
   max-width: 60%;
+}
+
+@media (max-width: 800px) {
+.view-1 .large  {
+    width: 750%;
+    display: block;
+  }
 }
 
 
