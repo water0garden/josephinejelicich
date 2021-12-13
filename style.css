@@ -344,3 +344,11 @@ button {
 .show {
   display: block;
 }
+
+
+footer {
+  clear: both;
+  position: relative;
+  padding-top: 4rem;
+
+}
