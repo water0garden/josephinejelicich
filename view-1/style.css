@@ -84,17 +84,20 @@ body {
   animation-iteration-count: infinite;
 }
 
-@media (max-width: 800px) {
-.view-1 .small  {
-    width: 40%;
-    display: block;
-  }
-}
+
 
 
 .view-1 .small:hover {
   width: 60%;
 }
+
+@media (max-width: 800px) {
+.view-1 .small {
+    max-width: 40%;
+    display: block;
+  }
+}
+
 
 .view-1 .medium {
       max-width: 30%;
@@ -120,7 +123,7 @@ body {
 
 
 
-.ornaments{
+.ornaments {
   font-family: 'hoefler-text-ornaments', hoefler-text-ornaments;
   font-size: 2rem;
 }
@@ -190,7 +193,7 @@ figure {
 
 @media (max-width: 800px) {
   .work {
-    width: 50%;
+    width: 100%;
   }
 }
 
