@@ -85,7 +85,7 @@ img {
   width: 650px;
   display: block;
   position: relative;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (max-width: 800px) {
@@ -98,7 +98,7 @@ img {
 figure {
   vertical-align: top;
   margin: 0;
-  padding: 0;
+  padding-right: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
   max-width: 50%;
@@ -194,7 +194,6 @@ button {
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
   cursor: grab;
-
 }
 
 
@@ -245,6 +244,7 @@ button {
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
+  text-decoration: underline;
 }
 
 .dropdown-content {
@@ -256,18 +256,22 @@ button {
   padding-top: 0.5rem transparent;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   z-index: 1;
+
 }
 
 .dropbtn.show + .dropdown-content {
   display: block;
   position: absolute;
   background-color: white;
+  padding-right: 1.5rem;
+  width: 97%;
 }
 
 
-/* .dropdown-content:active {
+ /* .dropdown-content:active {
   display: none;
-} */
+
+}  */
 
 @media (max-width: 800px) {
 .dropdown-content {
