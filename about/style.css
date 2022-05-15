@@ -34,6 +34,7 @@ font-style: normal;
   line-height: 1.3;
   animation: shake 10s;
   animation-iteration-count: infinite;
+  display: inline-block;
 }
 
 @keyframes shake {
@@ -378,6 +379,11 @@ button {
 
 .work .dropdown .dropbtn {
   display: none;
+}
+
+.shop-nav {
+  float: right;
+  padding-left: 40px;
 }
 
 

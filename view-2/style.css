@@ -34,6 +34,8 @@ font-style: normal;
   line-height: 1.3;
   animation: shake 10s;
   animation-iteration-count: infinite;
+  display: inline-block;
+
 }
 
 @keyframes shake {
@@ -427,6 +429,12 @@ button {
 .show {
   display: block;
 }
+
+.shop-nav {
+  float: right;
+  padding-left: 40px;
+}
+
 
 footer {
   clear: both;
