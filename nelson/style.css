@@ -35,9 +35,9 @@ html {
 
 .title-page {
   font-family: 'Herculanum.ttf';
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin: 0 auto;
-  padding-bottom: 0px;
+  padding-top: 8rem;
 }
 
 .special {
@@ -49,7 +49,6 @@ html {
   animation: shake 10s;
   animation-iteration-count: infinite;
   display: inline-block;
-
 }
 
 @keyframes shake {
@@ -68,6 +67,12 @@ html {
 
 
 /* *** main styles *** */
+@media (max-width: 800px) {
+  .info {
+    padding-bottom: 2rem;
+  }
+}
+
 
 body {
   font-size: 1rem;
@@ -82,7 +87,7 @@ body {
 }
 
 .work-container {
-  padding-top: 4rem;
+  padding-top: 3rem;
   width: 100%;
   margin: 0 auto;
   float: left;
@@ -90,6 +95,13 @@ body {
   overflow: auto;
   vertical-align: top;
 }
+
+.work-container:hover {
+  color: grey;
+  z-index: 16;
+}
+
+
 
 @media (max-width: 800px) {
   .work-container {
@@ -166,7 +178,7 @@ p {
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
   margin: 0px;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -180,6 +192,7 @@ p {
 @media (max-width: 800px) {
   .text-frag {
     margin-right: 2ch;
+    padding-bottom: 1ch;
   }
 }
 
@@ -204,21 +217,38 @@ p {
 }
 
 
-* {
-  box-sizing: border-box;
+
+/* *** Navigation and dropdown *** */
+
+.text-frag {
+  display: inline-block;
+  margin-right: 3ch;
+  vertical-align: top;
+  position: relative;
 }
 
-a:link, a:visited {
-color: black;
-text-decoration: none;
-display: inline-block;
+@media (max-width: 800px) {
+  .text-frag {
+    margin-right: 2ch;
+    padding-bottom: 2ch;
+  }
 }
 
-a:active { color: forestgreen;}
-a:hover { color: lavender;}
+@media (max-width: 800px) {
+  .info {
+    padding-bottom: 2rem;
+  }
+}
 
-
-/* *** Navigation Styles *** */
+@media (max-width: 800px) {
+  .info .text-frag .dropdown {
+    margin-right: 0px;
+    /* padding: 4rem; */
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
 
 button {
   background-color: transparent;
@@ -254,7 +284,6 @@ button {
   font-size: 1rem;
   padding-bottom: 1rem;
   padding-right: 12rem;
-  text-align: left;
 }
 
 @media (max-width: 800px) {
@@ -263,25 +292,43 @@ button {
   }
 }
 
+
+
+
+
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
+  text-decoration: underline;
 }
 
 .dropdown-content {
   display: none;
   position: relative;
-  padding-left: 6px transparent;
+  text-align: left;
+  /* padding-left: 6px transparent; */
   min-width: 160px;
   min-height: 40px;
-  padding-top: 0.5rem transparent;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  /* padding-top: 0.5rem transparent; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
   z-index: 1;
 }
 
 .dropbtn.show + .dropdown-content {
   display: block;
   position: absolute;
-  background-color: white;
+  /* background-color: DarkOliveGreen; */
+  /* padding-right: 1.5rem transparent; */
+  width: 97%;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+.dropbtn.show + .dropdown-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  }
 }
 
 
@@ -296,9 +343,11 @@ button {
 .dropdown-content a {
   float: none;
   color: black;
-  padding-top: 4px;
+  /* padding-top: 4px; */
   padding: 12px 16px;
-  border: 1px dotted;
+  padding-left: 0px;
+  padding-top: 0px;
+  /* border: 1px dotted; */
   text-decoration: none;
   display: block;
   text-align: left;
@@ -308,7 +357,6 @@ button {
   letter-spacing: 0.045rem;
 }
 
-
 .dropdown-content a:hover {
   text-decoration: underline;
 }
@@ -317,10 +365,18 @@ button {
   display: block;
 }
 
-.work .dropdown .dropbtn {
-  display: none;
+* {
+  box-sizing: border-box;
 }
 
+a:link, a:visited {
+color: grey;
+text-decoration: none;
+display: inline-block;
+}
+
+a:active { color: forestgreen;}
+a:hover { color: lavender;}
 
 footer {
   clear: both;
@@ -328,4 +384,20 @@ footer {
   padding-top: 4rem;
   z-index: 10;
   width: 100%;
+}
+
+/*shop*/
+
+.shop-nav {
+  float: right;
+  padding-left: 40px;
+}
+
+@media (max-width: 800px) {
+.shop-nav {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    position: absolute;
+  }
 }

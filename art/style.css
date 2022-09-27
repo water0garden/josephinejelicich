@@ -133,26 +133,6 @@ figure {
 }
 
 
-* {
-  box-sizing: border-box;
-}
-
-a:link, a:visited {
-color: black;
-text-decoration: none;
-display: inline-block;
-}
-
-a:active { color: forestgreen;}
-a:hover { color: lavender;}
-
-/* footer {
-  border-top: 1px;
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-} */
-
 figcaption {
   margin: 0 auto;
   padding-top: 0.5rem;
@@ -178,9 +158,11 @@ p {
 
 }
 
+/* *** Navigation and dropdown *** */
+
 .text-frag {
   display: inline-block;
-  margin-right: 3ch;
+  margin-right: 2ch;
   vertical-align: top;
   position: relative;
 }
@@ -191,8 +173,6 @@ p {
   }
 }
 
-
-
 button {
   background-color: transparent;
   padding: 0;
@@ -202,7 +182,6 @@ button {
   letter-spacing: 0.045rem;
   cursor: grab;
 }
-
 
 .navbar {
   display: inline-block;
@@ -219,7 +198,6 @@ button {
   text-decoration: none;
 }
 
-
 .dropdown .dropbtn {
   cursor: alias;
   border: none;
@@ -229,24 +207,12 @@ button {
   font-size: 1rem;
   padding-bottom: 1rem;
   padding-right: 12rem;
-  /* text-align: left; */
-
 }
-
 
 @media (max-width: 800px) {
   .dropdown .dropbtn  {
     padding-right: 0px;
   }
-}
-
-
- /* .dropbtn:active {
-  display: none;
-} */
-
-.dropbtn.show {
- /* background: yellow!important; */
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
@@ -257,14 +223,13 @@ button {
 .dropdown-content {
   display: none;
   position: relative;
-    text-align: left;
+  text-align: left;
   padding-left: 6px transparent;
   min-width: 160px;
   min-height: 40px;
   padding-top: 0.5rem transparent;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   z-index: 1;
-
 }
 
 .dropbtn.show + .dropdown-content {
@@ -276,19 +241,12 @@ button {
   text-align: left;
 }
 
-
- /* .dropdown-content:active {
-  display: none;
-
-}  */
-
 @media (max-width: 800px) {
 .dropdown-content {
     width: 90%;
     position: relative;
   }
 }
-
 
 .dropdown-content a {
   float: none;
@@ -305,8 +263,6 @@ button {
   letter-spacing: 0.045rem;
 }
 
-
-
 .dropdown-content a:hover {
   text-decoration: underline;
 }
@@ -315,6 +271,18 @@ button {
   display: block;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+color: black;
+text-decoration: none;
+display: inline-block;
+}
+
+a:active { color: forestgreen;}
+a:hover { color: lavender;}
 
 
 footer {

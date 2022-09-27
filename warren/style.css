@@ -3,7 +3,6 @@
   [property]: [value];
 }
 
-
 html {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -21,21 +20,35 @@ html {
    overflow: auto;
 }
 
+
+/* *** font things *** */
+
 @font-face {
   font-family: 'hoefler-text-ornaments';
   src: url(../fonts/hoefler-text-ornaments.ttf);
 }
 
+@font-face {
+  font-family: 'Herculanum.ttf';
+  src: url(../fonts/Herculanum.ttf);
+}
+
+.title-page {
+  font-family: 'Herculanum.ttf';
+  font-size: 1.3rem;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
 .special {
   font-family: 'hoefler-text-ornaments', hoefler-text-ornaments;
-font-weight: normal;
-font-style: normal;
+  font-weight: normal;
+  font-style: normal;
   font-size: 1rem;
   line-height: 1.3;
   animation: shake 10s;
   animation-iteration-count: infinite;
   display: inline-block;
-
 }
 
 @keyframes shake {
@@ -53,25 +66,28 @@ font-style: normal;
 }
 
 
+/* *** main styles *** */
+@media (max-width: 800px) {
+  .info {
+    padding-bottom: 2rem;
+  }
+}
 
 
 body {
   font-size: 1rem;
   line-height: 1.3;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-  /* text-transform: uppercase; */
   letter-spacing: 0.045rem;
   margin: 0;
   padding: 1.3rem;
   background: white;
-  /* overflow-x: hidden; */
   width: 100%;
   overflow: auto;
 }
 
-
 .work-container {
-  padding-top: 4rem;
+  padding-top: 3rem;
   width: 100%;
   margin: 0 auto;
   float: left;
@@ -80,27 +96,39 @@ body {
   vertical-align: top;
 }
 
-/* @media (max-width: 800px) {
+.work-container:hover {
+  color: grey;
+  z-index: 16;
+}
+
+
+
+@media (max-width: 800px) {
   .work-container {
-    max-width: 80%;
+    width: 100%;
   }
-} */
+}
 
 
+.work {
+  vertical-align: top;
+  display: inline-block;
 
-/* @media (max-width: 800px) {
-  .work-container {
-    max-width: 80%;
+}
+
+@media (max-width: 800px) {
+  .work {
+    max-width: 100%;
   }
-} */
+}
 
 
+/* *** fig, image styles *** */
 
 img {
   width: 650px;
   display: inline-block;
   position: relative;
-
 }
 
 @media (max-width: 800px) {
@@ -114,8 +142,8 @@ img {
 figure {
   margin: 0;
   padding: 0;
-  margin-right: 1.5rem;
-  margin-bottom:1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   max-width: 50%;
   display: block;
   position: relative;
@@ -128,49 +156,14 @@ figure {
   }
 }
 
-.work {
-  vertical-align: top;
-  display: inline-block;
 
-}
-
-@media (max-width: 800px) {
-  .work {
-    max-width: 90%;
-  }
-}
-
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-a:link, a:visited {
-color: black;
-text-decoration: none;
-display: inline-block;
-}
-
-a:active { color: forestgreen;}
-a:hover { color: lavender;}
-
-/* footer {
-  border-top: 1px;
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-} */
+/* *** text styles *** */
 
 figcaption {
   display: none;
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
   width: 650px;
-}
-
-figcaption:hover {
-  color: black;
 }
 
 @media (max-width: 800px) {
@@ -186,8 +179,8 @@ p {
   letter-spacing: 0.045rem;
   margin: 0px;
   padding-bottom: 2rem;
-
 }
+
 
 .text-frag {
   display: inline-block;
@@ -199,10 +192,63 @@ p {
 @media (max-width: 800px) {
   .text-frag {
     margin-right: 2ch;
+    padding-bottom: 1ch;
+  }
+}
+
+.shop-nav {
+  float: right;
+  padding-left: 40px;
+}
+
+@media (max-width: 800px) {
+.shop-nav {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    position: absolute;
   }
 }
 
 
+.text-block {
+  padding-top: 8rem;
+  width: 92%;
+}
+
+
+
+/* *** Navigation and dropdown *** */
+
+.text-frag {
+  display: inline-block;
+  margin-right: 3ch;
+  vertical-align: top;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .text-frag {
+    margin-right: 2ch;
+    padding-bottom: 2ch;
+  }
+}
+
+@media (max-width: 800px) {
+  .info {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .info .text-frag .dropdown {
+    margin-right: 0px;
+    /* padding: 4rem; */
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
 
 button {
   background-color: transparent;
@@ -212,16 +258,13 @@ button {
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
   cursor: grab;
-
 }
-
 
 .navbar {
   display: inline-block;
   margin-right: 3ch;
   color: black;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-
 }
 
 .navbar a {
@@ -232,9 +275,8 @@ button {
   text-decoration: none;
 }
 
-
 .dropdown .dropbtn {
-  cursor: alias;
+  cursor: pointer;
   border: none;
   color: black;
   background-color: inherit;
@@ -242,10 +284,7 @@ button {
   font-size: 1rem;
   padding-bottom: 1rem;
   padding-right: 12rem;
-  text-align: left;
-
 }
-
 
 @media (max-width: 800px) {
   .dropdown .dropbtn  {
@@ -253,45 +292,45 @@ button {
   }
 }
 
-.text-block {
-  width: 97%;
-}
 
 
- /* .dropbtn:active {
-  display: none;
-} */
 
-.dropbtn.show {
- /* background: yellow!important; */
-}
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
-
+  text-decoration: underline;
 }
 
 .dropdown-content {
   display: none;
   position: relative;
-  padding-left: 6px transparent;
+  text-align: left;
+  /* padding-left: 6px transparent; */
   min-width: 160px;
   min-height: 40px;
-  padding-top: 0.5rem transparent;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  /* padding-top: 0.5rem transparent; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
   z-index: 1;
 }
 
 .dropbtn.show + .dropdown-content {
   display: block;
   position: absolute;
-  background-color: white;
+  /* background-color: DarkOliveGreen; */
+  /* padding-right: 1.5rem transparent; */
+  width: 97%;
+  text-align: left;
 }
 
+@media (max-width: 800px) {
+.dropbtn.show + .dropdown-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  }
+}
 
-/* .dropdown-content:active {
-  display: none;
-} */
 
 @media (max-width: 800px) {
 .dropdown-content {
@@ -304,9 +343,11 @@ button {
 .dropdown-content a {
   float: none;
   color: black;
-  padding-top: 4px;
+  /* padding-top: 4px; */
   padding: 12px 16px;
-  border: 1px dotted;
+  padding-left: 0px;
+  padding-top: 0px;
+  /* border: 1px dotted; */
   text-decoration: none;
   display: block;
   text-align: left;
@@ -316,8 +357,6 @@ button {
   letter-spacing: 0.045rem;
 }
 
-
-
 .dropdown-content a:hover {
   text-decoration: underline;
 }
@@ -326,15 +365,18 @@ button {
   display: block;
 }
 
-.work .dropdown .dropbtn {
-  display: none;
+* {
+  box-sizing: border-box;
 }
 
-.shop-nav {
-  float: right;
-  padding-left: 40px;
+a:link, a:visited {
+color: grey;
+text-decoration: none;
+display: inline-block;
 }
 
+a:active { color: forestgreen;}
+a:hover { color: DarkOliveGreen;}
 
 footer {
   clear: both;
@@ -342,4 +384,20 @@ footer {
   padding-top: 4rem;
   z-index: 10;
   width: 100%;
+}
+
+/*shop*/
+
+.shop-nav {
+  float: right;
+  padding-left: 40px;
+}
+
+@media (max-width: 800px) {
+.shop-nav {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    position: absolute;
+  }
 }
