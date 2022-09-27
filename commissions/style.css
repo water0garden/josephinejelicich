@@ -3,7 +3,6 @@
   [property]: [value];
 }
 
-
 html {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -21,15 +20,29 @@ html {
    overflow: auto;
 }
 
+
+/* *** font things *** */
+
 @font-face {
   font-family: 'hoefler-text-ornaments';
   src: url(../fonts/hoefler-text-ornaments.ttf);
 }
 
+@font-face {
+  font-family: 'Herculanum.ttf';
+  src: url(../fonts/Herculanum.ttf);
+}
+
+.title-page {
+  font-family: 'Herculanum.ttf';
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
 .special {
   font-family: 'hoefler-text-ornaments', hoefler-text-ornaments;
-font-weight: normal;
-font-style: normal;
+  font-weight: normal;
+  font-style: normal;
   font-size: 1rem;
   line-height: 1.3;
   animation: shake 10s;
@@ -53,23 +66,19 @@ font-style: normal;
 }
 
 
-
-
+/* *** main styles *** */
 
 body {
   font-size: 1rem;
   line-height: 1.3;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-  /* text-transform: uppercase; */
   letter-spacing: 0.045rem;
   margin: 0;
   padding: 1.3rem;
   background: white;
-  /* overflow-x: hidden; */
   width: 100%;
   overflow: auto;
 }
-
 
 .work-container {
   padding-top: 4rem;
@@ -81,19 +90,32 @@ body {
   vertical-align: top;
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   .work-container {
-    max-width: 80%;
+    width: 100%;
   }
-} */
+}
 
 
+.work {
+  vertical-align: top;
+  display: inline-block;
+
+}
+
+@media (max-width: 800px) {
+  .work {
+    max-width: 100%;
+  }
+}
+
+
+/* *** fig, image styles *** */
 
 img {
-  width: 665px;
-  display: block;
+  width: 650px;
+  display: inline-block;
   position: relative;
-  padding-bottom: 1.5rem;
 }
 
 @media (max-width: 800px) {
@@ -103,19 +125,12 @@ img {
   }
 }
 
- /* img:hover {
-  display: none;
-  position: absolute;
-  transition: 3s;
-} */
-
 
 figure {
-  vertical-align: top;
   margin: 0;
   padding: 0;
-  margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   max-width: 50%;
   display: block;
   position: relative;
@@ -128,47 +143,14 @@ figure {
   }
 }
 
-.work {
-  margin: 0 auto;
-  display: inline-block;
-  width: 50%;
-}
 
-@media (max-width: 800px) {
-  .work {
-    max-width: 90%;
-  }
-}
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-a:link, a:visited {
-color: black;
-text-decoration: none;
-display: inline-block;
-}
-
-a:active { color: forestgreen;}
-a:hover { color: lavender;}
-
-/* footer {
-  border-top: 1px;
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-} */
+/* *** text styles *** */
 
 figcaption {
-  padding-top: 0.5rem;
+  display: none;
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
   width: 650px;
-}
-
-figcaption:hover {
-  color: black;
 }
 
 @media (max-width: 800px) {
@@ -184,8 +166,8 @@ p {
   letter-spacing: 0.045rem;
   margin: 0px;
   padding-bottom: 2rem;
-
 }
+
 
 .text-frag {
   display: inline-block;
@@ -200,7 +182,42 @@ p {
   }
 }
 
+.shop-nav {
+  float: right;
+  padding-left: 40px;
+}
 
+@media (max-width: 800px) {
+.shop-nav {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    position: absolute;
+  }
+}
+
+
+
+.text-block {
+  width: 92%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+color: black;
+text-decoration: none;
+display: inline-block;
+}
+
+a:active { color: forestgreen;}
+a:hover { color: lavender;}
+
+
+/* *** Navigation Styles *** */
 
 button {
   background-color: transparent;
@@ -210,16 +227,13 @@ button {
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
   cursor: grab;
-
 }
-
 
 .navbar {
   display: inline-block;
   margin-right: 3ch;
   color: black;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-
 }
 
 .navbar a {
@@ -230,9 +244,8 @@ button {
   text-decoration: none;
 }
 
-
 .dropdown .dropbtn {
-  cursor: alias;
+  cursor: pointer;
   border: none;
   color: black;
   background-color: inherit;
@@ -241,9 +254,7 @@ button {
   padding-bottom: 1rem;
   padding-right: 12rem;
   text-align: left;
-
 }
-
 
 @media (max-width: 800px) {
   .dropdown .dropbtn  {
@@ -251,18 +262,8 @@ button {
   }
 }
 
-
- /* .dropbtn:active {
-  display: none;
-} */
-
-.dropbtn.show {
- /* background: yellow!important; */
-}
-
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
-
 }
 
 .dropdown-content {
@@ -282,10 +283,6 @@ button {
   background-color: white;
 }
 
-
-/* .dropdown-content:active {
-  display: none;
-} */
 
 @media (max-width: 800px) {
 .dropdown-content {
@@ -311,7 +308,6 @@ button {
 }
 
 
-
 .dropdown-content a:hover {
   text-decoration: underline;
 }
@@ -324,18 +320,11 @@ button {
   display: none;
 }
 
-.shop-nav {
-  float: right;
-  padding-left: 40px;
-}
-
 
 footer {
   clear: both;
   position: relative;
   padding-top: 4rem;
   z-index: 10;
-width: 100%;
-
-
+  width: 100%;
 }

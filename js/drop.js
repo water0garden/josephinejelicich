@@ -17,19 +17,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     }
   }
-
-  var entryHTML = '<figure class="work ' + size + '">'
-        + '<img src="' + entry.image.original.url + '">'
-        + '<dropdown>'
-          '<button class="dropbtn" onclick="myFunction()">'
-        + entry.title
-          '<i class="fa fa-caret-down"></i>'
-        '</button>'
-        '<div class="dropdown-content" id="myDropdown">'
-          + entry.description_html
-          '</div>'
-        + '</dropdown>'
-      + '</figure>';
   }
 
 

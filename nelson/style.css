@@ -3,7 +3,6 @@
   [property]: [value];
 }
 
-
 html {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -21,21 +20,12 @@ html {
    overflow: auto;
 }
 
+
+/* *** font things *** */
+
 @font-face {
   font-family: 'hoefler-text-ornaments';
   src: url(../fonts/hoefler-text-ornaments.ttf);
-}
-
-.special {
-  font-family: 'hoefler-text-ornaments', hoefler-text-ornaments;
-font-weight: normal;
-font-style: normal;
-  font-size: 1rem;
-  line-height: 1.3;
-  animation: shake 10s;
-  animation-iteration-count: infinite;
-  display: inline-block;
-
 }
 
 @font-face {
@@ -44,16 +34,23 @@ font-style: normal;
 }
 
 .title-page {
-  font-family: 'Herculanum', Herculanum;
-font-weight: light;
-font-style: normal;
-  font-size: 1.5rem;
-  line-height: 1.3;
-  animation-iteration-count: infinite;
+  font-family: 'Herculanum.ttf';
+  font-size: 2rem;
+  margin: 0 auto;
   padding-bottom: 0px;
 }
 
+.special {
+  font-family: 'hoefler-text-ornaments', hoefler-text-ornaments;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.3;
+  animation: shake 10s;
+  animation-iteration-count: infinite;
+  display: inline-block;
 
+}
 
 @keyframes shake {
  0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -70,33 +67,19 @@ font-style: normal;
 }
 
 
-
-
+/* *** main styles *** */
 
 body {
   font-size: 1rem;
   line-height: 1.3;
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-  /* text-transform: uppercase; */
   letter-spacing: 0.045rem;
   margin: 0;
   padding: 1.3rem;
   background: white;
-  /* overflow-x: hidden; */
   width: 100%;
   overflow: auto;
 }
-
-p {
-  font-size: 1rem;
-  line-height: 1.3;
-  font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-  letter-spacing: 0.045rem;
-  margin: 0px;
-  padding-bottom: 5rem;
-}
-
-
 
 .work-container {
   padding-top: 4rem;
@@ -106,23 +89,34 @@ p {
   display: block;
   overflow: auto;
   vertical-align: top;
+}
 
+@media (max-width: 800px) {
+  .work-container {
+    width: 100%;
+  }
+}
+
+
+.work {
+  vertical-align: top;
+  display: inline-block;
 
 }
 
-/* @media (max-width: 800px) {
-  .work-container {
-    max-width: 80%;
+@media (max-width: 800px) {
+  .work {
+    max-width: 100%;
   }
-} */
+}
 
 
+/* *** fig, image styles *** */
 
 img {
   width: 650px;
   display: inline-block;
   position: relative;
-
 }
 
 @media (max-width: 800px) {
@@ -136,8 +130,8 @@ img {
 figure {
   margin: 0;
   padding: 0;
-  margin-right: 1.5rem;
-  margin-bottom:1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   max-width: 50%;
   display: block;
   position: relative;
@@ -150,16 +144,63 @@ figure {
   }
 }
 
-.work {
-vertical-align: top;
-  display: inline-block;
 
+/* *** text styles *** */
+
+figcaption {
+  display: block;
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
+  width: 650px;
 }
 
 @media (max-width: 800px) {
-  .work {
-    max-width: 90%;
+  figcaption {
+    width: 100%;
   }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
+  letter-spacing: 0.045rem;
+  margin: 0px;
+  padding-bottom: 4rem;
+}
+
+
+.text-frag {
+  display: inline-block;
+  margin-right: 3ch;
+  vertical-align: top;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .text-frag {
+    margin-right: 2ch;
+  }
+}
+
+.shop-nav {
+  float: right;
+  padding-left: 40px;
+}
+
+@media (max-width: 800px) {
+.shop-nav {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    position: absolute;
+  }
+}
+
+
+
+.text-block {
+  width: 95%;
 }
 
 
@@ -176,44 +217,18 @@ display: inline-block;
 a:active { color: forestgreen;}
 a:hover { color: lavender;}
 
-/* footer {
-  border-top: 1px;
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-} */
 
-figcaption {
-  padding-top: 0.5rem;
-  width: 650px;
+/* *** Navigation Styles *** */
+
+button {
+  background-color: transparent;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
+  letter-spacing: 0.045rem;
+  cursor: grab;
 }
-
-figcaption:hover {
-  color: black;
-}
-
-@media (max-width: 800px) {
-  figcaption {
-    width: 100%;
-  }
-}
-
-
-/* navagation top */
-
-.text-frag {
-  display: inline-block;
-  margin-right: 3ch;
-  vertical-align: top;
-  position: relative;
-}
-
-@media (max-width: 800px) {
-  .text-frag {
-    margin-right: 2ch;
-  }
-}
-
 
 .navbar {
   display: inline-block;
@@ -230,25 +245,8 @@ figcaption:hover {
   text-decoration: none;
 }
 
-
-
-/* dropdown */
-
-button {
-  background-color: transparent;
-  padding: 0;
-  font-size: 1rem;
-  line-height: 1.3;
-  font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
-  letter-spacing: 0.045rem;
-  cursor: grab;
-
-}
-
-
-
 .dropdown .dropbtn {
-  cursor: alias;
+  cursor: pointer;
   border: none;
   color: black;
   background-color: inherit;
@@ -263,14 +261,6 @@ button {
   .dropdown .dropbtn  {
     padding-right: 0px;
   }
-}
-
- /* .dropbtn:active {
-  display: none;
-} */
-
-.dropbtn.show {
- /* background: yellow!important; */
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
@@ -294,10 +284,6 @@ button {
   background-color: white;
 }
 
-
-/* .dropdown-content:active {
-  display: none;
-} */
 
 @media (max-width: 800px) {
 .dropdown-content {
@@ -323,7 +309,6 @@ button {
 }
 
 
-
 .dropdown-content a:hover {
   text-decoration: underline;
 }
@@ -332,17 +317,15 @@ button {
   display: block;
 }
 
-.shop-nav {
-  float: right;
-  padding-left: 40px;
+.work .dropdown .dropbtn {
+  display: none;
 }
 
-
-/*footer*/
 
 footer {
   clear: both;
   position: relative;
   padding-top: 4rem;
-
+  z-index: 10;
+  width: 100%;
 }
