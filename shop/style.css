@@ -3,7 +3,6 @@
   [property]: [value];
 }
 
-
 html {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -54,6 +53,19 @@ html {
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+color: grey;
+text-decoration: none;
+display: inline-block;
+}
+
+a:active { color: forestgreen;}
+a:hover { color: black;}
+
 
 
 
@@ -73,7 +85,7 @@ body {
 
 
 .work-container {
-  padding-top: 4rem;
+  padding-top: 8rem;
   width: 100%;
   margin: 0 auto;
   float: left;
@@ -132,7 +144,7 @@ figure {
 }
 
 .work {
-margin: 0 auto;
+  margin: 0 auto;
   display: inline-block;
   width: 50%;
 }
@@ -143,27 +155,6 @@ margin: 0 auto;
   }
 }
 
-
-
-* {
-  box-sizing: border-box;
-}
-
-a:link, a:visited {
-color: black;
-text-decoration: none;
-display: inline-block;
-}
-
-a:active { color: forestgreen;}
-a:hover { color: lavender;}
-
-/* footer {
-  border-top: 1px;
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-} */
 
 figcaption {
   padding-top: 0.5rem;
@@ -265,10 +256,6 @@ button {
   }
 }
 
-
-
-
-
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
   text-decoration: underline;
@@ -284,6 +271,13 @@ button {
   /* padding-top: 0.5rem transparent; */
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
   z-index: 1;
+}
+
+@media (max-width: 800px) {
+.dropdown-content {
+    width: 90%;
+    position: relative;
+  }
 }
 
 .dropbtn.show + .dropdown-content {
@@ -303,15 +297,6 @@ button {
   float: left;
   }
 }
-
-
-@media (max-width: 800px) {
-.dropdown-content {
-    width: 90%;
-    position: relative;
-  }
-}
-
 
 .dropdown-content a {
   float: none;
@@ -338,18 +323,6 @@ button {
   display: block;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-a:link, a:visited {
-color: grey;
-text-decoration: none;
-display: inline-block;
-}
-
-a:active { color: forestgreen;}
-a:hover { color: lavender;}
 
 /*shop*/
 
@@ -357,6 +330,30 @@ a:hover { color: lavender;}
   float: right;
   padding-left: 40px;
 }
+
+@media (max-width: 800px) {
+.shop-nav {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    position: absolute;
+  }
+}
+
+footer {
+  clear: both;
+  position: relative;
+  padding-top: 4rem;
+  z-index: 10;
+  width: 100%;
+}
+
+
+/* *** end *** */
+
+
+
+/* *** shoppy + shopify *** */
 
 .shop-item-price {
   width: 50%;
@@ -374,10 +371,4 @@ a:hover { color: lavender;}
 
 #product-component-1652066986262 {
   display: inline-block;
-}
-
-footer {
-  clear: both;
-  position: relative;
-  padding-top: 4rem;
 }

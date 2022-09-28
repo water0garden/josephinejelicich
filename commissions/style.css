@@ -20,6 +20,18 @@ html {
    overflow: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+color: grey;
+text-decoration: none;
+display: inline-block;
+}
+
+a:active { color: forestgreen;}
+a:hover { color: black;}
 
 /* *** font things *** */
 
@@ -90,6 +102,8 @@ body {
   width: 100%;
   overflow: auto;
 }
+
+
 
 .work-container {
   padding-top: 3rem;
@@ -189,36 +203,6 @@ p {
 
 p figcaption {
   padding-bottom: 4rem;
-}
-
-
-
-.text-frag {
-  display: inline-block;
-  margin-right: 3ch;
-  vertical-align: top;
-  position: relative;
-}
-
-@media (max-width: 800px) {
-  .text-frag {
-    margin-right: 2ch;
-    padding-bottom: 1ch;
-  }
-}
-
-.shop-nav {
-  float: right;
-  padding-left: 40px;
-}
-
-@media (max-width: 800px) {
-.shop-nav {
-    display: inline-block;
-    float: left;
-    padding: 0;
-    position: absolute;
-  }
 }
 
 
@@ -374,19 +358,6 @@ button {
 .show {
   display: block;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-a:link, a:visited {
-color: grey;
-text-decoration: none;
-display: inline-block;
-}
-
-a:active { color: forestgreen;}
-a:hover { color: black;}
 
 footer {
   clear: both;

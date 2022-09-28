@@ -21,6 +21,17 @@ html {
 }
 
 
+a:link, a:visited {
+color: grey;
+text-decoration: none;
+}
+
+a:active { color: forestgreen;}
+a:hover { color: black;}
+
+
+
+
 /* *** font things *** */
 
 @font-face {
@@ -181,36 +192,6 @@ p {
 }
 
 
-.text-frag {
-  display: inline-block;
-  margin-right: 3ch;
-  vertical-align: top;
-  position: relative;
-}
-
-@media (max-width: 800px) {
-  .text-frag {
-    margin-right: 2ch;
-    padding-bottom: 1ch;
-  }
-}
-
-.shop-nav {
-  float: right;
-  padding-left: 40px;
-}
-
-@media (max-width: 800px) {
-.shop-nav {
-    display: inline-block;
-    float: left;
-    padding: 0;
-    position: absolute;
-  }
-}
-
-
-
 .text-block {
   width: 95%;
 }
@@ -229,7 +210,7 @@ p {
 @media (max-width: 800px) {
   .text-frag {
     margin-right: 2ch;
-    padding-bottom: 2ch;
+    padding-bottom: 1ch;
   }
 }
 
@@ -290,10 +271,6 @@ button {
     padding-right: 0px;
   }
 }
-
-
-
-
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
@@ -356,6 +333,12 @@ button {
   letter-spacing: 0.045rem;
 }
 
+@media (max-width: 800px) {
+.dropdown-content a {
+  display: inline-block;
+  }
+}
+
 .dropdown-content a:hover {
   text-decoration: underline;
 }
@@ -368,28 +351,11 @@ button {
   box-sizing: border-box;
 }
 
-a:link, a:visited {
-color: grey;
-text-decoration: none;
-display: inline-block;
-}
-
-a:active { color: forestgreen;}
-a:hover { color: lavender;}
-
-footer {
-  clear: both;
-  position: relative;
-  padding-top: 4rem;
-  z-index: 10;
-  width: 100%;
-}
-
 /*shop*/
 
 .shop-nav {
   float: right;
-  padding-left: 40px;
+  padding-left: 3ch;
 }
 
 @media (max-width: 800px) {
@@ -399,4 +365,12 @@ footer {
     padding: 0;
     position: absolute;
   }
+}
+
+footer {
+  clear: both;
+  position: relative;
+  padding-top: 4rem;
+  z-index: 10;
+  width: 100%;
 }

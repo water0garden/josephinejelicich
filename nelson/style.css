@@ -20,6 +20,21 @@ html {
    overflow: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+color: grey;
+text-decoration: none;
+display: inline-block;
+}
+
+a:active { color: forestgreen;}
+a:hover { color: lavender;}
+
+
+
 
 /* *** font things *** */
 
@@ -365,27 +380,6 @@ button {
   display: block;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-a:link, a:visited {
-color: grey;
-text-decoration: none;
-display: inline-block;
-}
-
-a:active { color: forestgreen;}
-a:hover { color: lavender;}
-
-footer {
-  clear: both;
-  position: relative;
-  padding-top: 4rem;
-  z-index: 10;
-  width: 100%;
-}
-
 /*shop*/
 
 .shop-nav {
@@ -400,4 +394,12 @@ footer {
     padding: 0;
     position: absolute;
   }
+}
+
+footer {
+  clear: both;
+  position: relative;
+  padding-top: 4rem;
+  z-index: 10;
+  width: 100%;
 }
