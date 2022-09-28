@@ -27,7 +27,6 @@ html {
 a:link, a:visited {
 color: grey;
 text-decoration: none;
-display: inline-block;
 }
 
 a:active { color: forestgreen;}
@@ -224,7 +223,7 @@ p figcaption {
 @media (max-width: 800px) {
   .text-frag {
     margin-right: 2ch;
-    padding-bottom: 2ch;
+    padding-bottom: 1ch;
   }
 }
 
@@ -350,6 +349,13 @@ button {
   font-family: 'Dotum', 'SC Dream', Arial, sans-serif;
   letter-spacing: 0.045rem;
 }
+
+@media (max-width: 800px) {
+.dropdown-content a {
+  display: inline-block;
+  }
+}
+
 
 .dropdown-content a:hover {
   text-decoration: underline;

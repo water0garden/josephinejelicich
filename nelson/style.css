@@ -27,7 +27,6 @@ html {
 a:link, a:visited {
 color: grey;
 text-decoration: none;
-display: inline-block;
 }
 
 a:active { color: forestgreen;}
@@ -196,21 +195,6 @@ p {
   padding-bottom: 2rem;
 }
 
-
-.text-frag {
-  display: inline-block;
-  margin-right: 3ch;
-  vertical-align: top;
-  position: relative;
-}
-
-@media (max-width: 800px) {
-  .text-frag {
-    margin-right: 2ch;
-    padding-bottom: 1ch;
-  }
-}
-
 .shop-nav {
   float: right;
   padding-left: 40px;
@@ -245,7 +229,7 @@ p {
 @media (max-width: 800px) {
   .text-frag {
     margin-right: 2ch;
-    padding-bottom: 2ch;
+    padding-bottom: 1ch;
   }
 }
 
@@ -306,10 +290,6 @@ button {
     padding-right: 0px;
   }
 }
-
-
-
-
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: transparent;
@@ -372,6 +352,12 @@ button {
   letter-spacing: 0.045rem;
 }
 
+@media (max-width: 800px) {
+.dropdown-content a {
+  display: inline-block;
+  }
+}
+
 .dropdown-content a:hover {
   text-decoration: underline;
 }
@@ -393,6 +379,7 @@ button {
     float: left;
     padding: 0;
     position: absolute;
+    padding-left: 3ch;
   }
 }
 

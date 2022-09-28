@@ -240,7 +240,7 @@ p {
 @media (max-width: 800px) {
   .text-frag {
     margin-right: 2ch;
-    padding-bottom: 2ch;
+    padding-bottom: 1ch;
   }
 }
 

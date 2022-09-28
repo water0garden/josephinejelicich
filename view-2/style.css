@@ -106,6 +106,8 @@ body {
   vertical-align: top;
 }
 
+
+
 /* .work-container:hover {
   color: grey;
   z-index: 16;
@@ -338,6 +340,7 @@ button {
   display: inline-block;
   }
 }
+
 
 .dropdown-content a:hover {
   text-decoration: underline;

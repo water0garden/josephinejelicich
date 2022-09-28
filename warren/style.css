@@ -220,20 +220,6 @@ p {
 
 /* *** Navigation and dropdown *** */
 
-.text-frag {
-  display: inline-block;
-  margin-right: 3ch;
-  vertical-align: top;
-  position: relative;
-}
-
-@media (max-width: 800px) {
-  .text-frag {
-    margin-right: 2ch;
-    padding-bottom: 2ch;
-  }
-}
-
 @media (max-width: 800px) {
   .info {
     padding-bottom: 2rem;

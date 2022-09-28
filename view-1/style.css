@@ -93,6 +93,9 @@ body {
   overflow: auto;
 }
 
+.page-introduction {
+  max-width: 60%;
+}
 
 
 .view-1 .small {
